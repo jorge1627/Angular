@@ -1,0 +1,17 @@
+
+<form [formGroup]=form (ngSubmit)="save($event)">
+<div class="field">
+    <label class="label">Email</label>
+    <div class="control has-icons-left has-icons-right">
+      <input class="input" type="email" formControlName="email">
+      <span class="icon is-small is-left">
+        <i class="fas fa-at"></i>
+      </span>
+      <span class="icon is-small is-right">
+        <i class="fas fa-check"></i>
+      </span>
+    </div>
+    <p class="help is-success">Success message</p>
+    <p class="help is-danger">Error message</p>
+  </div>
+</form>
